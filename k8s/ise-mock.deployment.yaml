@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ise-mock
+spec:
+  selector:
+    matchLabels:
+      app: ise-mock
+  template:
+    metadata:
+      labels:
+        app: ise-mock
+    spec:
+      containers:
+      - name: ise-mock
+        image: registry.digitalocean.com/pbb/ise-mock:0.04a
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080

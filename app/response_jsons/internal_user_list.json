@@ -1,0 +1,37 @@
+{
+  "SearchResult": {
+    "total": 3,
+    "resources": [
+      {
+        "id": "exampleID1",
+        "name": "name1",
+        "description": "description1",
+        "link": {
+          "rel": "self",
+          "href": "https://<ise-ip>:9060/ers/config/ers/config/internaluser/exampleID1",
+          "type": "application/json"
+        }
+      },
+      {
+        "id": "exampleID2",
+        "name": "name2",
+        "description": "description2",
+        "link": {
+          "rel": "self",
+          "href": "https://<ise-ip>:9060/ers/config/ers/config/internaluser/exampleID2",
+          "type": "application/json"
+        }
+      },
+      {
+        "id": " exampleID3",
+        "name": "name3",
+        "description": "description3",
+        "link": {
+          "rel": "self",
+          "href": "https://<ise-ip>:9060/ers/config/ers/config/internaluser/exampleID",
+          "type": "application/json"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "InternalUser": {
+    "id": user_id,
+    "name": "name",
+    "description": "description",
+    "enabled": true,
+    "email": "email@domain.com",
+    "accountNameAlias": "user123",
+    "password": "*******",
+    "firstName": "firstName",
+    "lastName": "lastName",
+    "changePassword": true,
+    "identityGroups": "identityGroups",
+    "passwordNeverExpires": false,
+    "daysForPasswordExpiration": 60,
+    "expiryDateEnabled": true,
+    "expiryDate": "2021-05-19",
+    "enablePassword": "enablePassword",
+    "dateModified": "2021-01-03",
+    "dateCreated": "2021-01-01",
+    "customAttributes": {
+      "key1": "value1",
+      "key2": "value2"
+    },
+    "passwordIDStore": "Internal Users",
+    "link": {
+      "rel": "self",
+      "href": "https://<ise-ip>:9060/ers/config/ers/config/internaluser/b24b09e2-16f8-4e48-ace1-2c262a9449f1",
+      "type": "application/json"
+    }
+  }
+}
