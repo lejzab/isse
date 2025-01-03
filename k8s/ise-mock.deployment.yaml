@@ -13,7 +13,8 @@ spec:
     spec:
       containers:
       - name: ise-mock
-        image: registry.digitalocean.com/pbb/ise-mock:0.04a
+        image: registry.local:32000/ise-mock:0.04
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "128Mi"

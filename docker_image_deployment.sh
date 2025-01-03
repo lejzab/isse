@@ -3,8 +3,8 @@
 # Nazwy i tagi obrazów
 LOCAL_IMAGE_NAME="ise-mock"
 LOCAL_TAG_LATEST="latest"
-VERSION_TAG="0.04a"
-REGISTRY_URL="registry.digitalocean.com/pbb"
+VERSION_TAG="0.04"
+REGISTRY_URL="registry.local:32000"
 REMOTE_IMAGE_NAME="$REGISTRY_URL/$LOCAL_IMAGE_NAME:$VERSION_TAG"
 
 echo "Budowanie obrazu Docker..."
