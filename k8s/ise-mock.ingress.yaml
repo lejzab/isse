@@ -9,7 +9,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.entrypoints: web # Ustawienie entrypointu dla Traefika (domyślnie "web" lub "websecure")
 spec:
   rules:
-    - host: kamino.local
+    - host: ise.mock
       http:
         paths:
           - pathType: Prefix

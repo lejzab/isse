@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 
 	"log/slog"
 )
@@ -25,4 +26,14 @@ func GetInternalUserList(w http.ResponseWriter, r *http.Request) {
 func GetInternalUser(w http.ResponseWriter, r *http.Request) {
 	response := fmt.Sprintf(InternalUserJSON, r.PathValue("user_id"))
 	w.Write([]byte(response))
+}
+
+func GetFilteredInternalUserList(w http.ResponseWriter, r *http.Request) {
+	filter := r.URL.Query().Get("filter")
+	if !strings.HasPrefix(filter, "name.EQ") {
+		http.Error(w, "Invalid filter", http.StatusBadRequest)
+		return
+	}
+	name := strings.TrimPrefix(filter, "name.EQ.")
+
 }
